@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | WellCraftHub</title>
+<meta name="description" content="Questions about an order or a product? Get in touch with WellCraftHub support.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="/" class="logo">WellCraft<span>Hub</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/#products">Shop</a></li>
+      <li><a href="/#philosophy">Our Philosophy</a></li>
+      <li><a href="/refund-policy.html">Refund Policy</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <div class="container prose">
+      <p class="eyebrow" style="text-align:center;">We're here to help</p>
+      <h1 style="text-align:center;">Contact Support</h1>
+      <p style="text-align:center;">
+        Questions about an order, a download that will not open, or which planner is
+        right for you? Send a message below or email us directly at
+        <a href="mailto:support@wellcrafthub.com">support@wellcrafthub.com</a>.
+        We aim to reply within 1&ndash;2 business days.
+      </p>
+
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="margin-top: 40px;">
+        <input type="hidden" name="form-name" value="contact" />
+        <p style="position: absolute; left: -9999px;" aria-hidden="true">
+          <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+        </p>
+
+        <label class="form-field">
+          Name
+          <input type="text" name="name" required>
+        </label>
+
+        <label class="form-field">
+          Email
+          <input type="email" name="email" required>
+        </label>
+
+        <label class="form-field">
+          Order email (if this is about a purchase)
+          <input type="email" name="order-email">
+        </label>
+
+        <label class="form-field">
+          Message
+          <textarea name="message" required></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="/" class="logo">WellCraft<span>Hub</span></a>
+        <p style="margin-top: 14px; max-width: 320px;">
+          Calm, premium wellness guides and planners for life after 40.
+          Also available on our <a href="https://www.etsy.com/shop/WellCraftHub" target="_blank" rel="noopener" style="color: var(--brass);">Etsy shop</a>.
+        </p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul class="footer-links">
+          <li><a href="/products/thrive-after-40-wellness-bundle.html">Wellness Bundle</a></li>
+          <li><a href="/products/longevity-weekly-planner.html">Longevity Planner</a></li>
+          <li><a href="/products/thrive-after-40-weekly-planner.html">Weekly Wellness Planner</a></li>
+          <li><a href="/products/90-day-blueprint-workbook.html">90-Day Blueprint Workbook</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul class="footer-links">
+          <li><a href="/refund-policy.html">Refund Policy</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-current-year></span> WellCraftHub. All rights reserved.</span>
+      <span>Payments processed securely by Stripe.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
