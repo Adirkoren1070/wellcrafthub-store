@@ -16,6 +16,7 @@
 
 const PRODUCTS = {
   'thrive-after-40-wellness-bundle': {
+    image: '/images/thrive-after-40-wellness-bundle.jpg',
     name: 'Thrive After 40 Wellness Bundle',
     priceDisplay: '$47',
     priceIdEnv: 'STRIPE_PRICE_WELLNESS_BUNDLE',
@@ -26,6 +27,7 @@ const PRODUCTS = {
     tagline: 'The complete guide, weekly planner, and Notion template, bundled together.',
   },
   'longevity-weekly-planner': {
+    image: '/images/longevity-weekly-planner.jpg',
     name: 'Longevity Weekly Planner',
     priceDisplay: '$4.99',
     priceIdEnv: 'STRIPE_PRICE_LONGEVITY_PLANNER',
@@ -36,6 +38,7 @@ const PRODUCTS = {
     tagline: 'A simple standalone planner for building steady, lasting habits.',
   },
   'thrive-after-40-weekly-planner': {
+    image: '/images/thrive-after-40-weekly-planner.jpg',
     name: 'Thrive After 40, Weekly Wellness Planner',
     priceDisplay: '$12.99',
     priceIdEnv: 'STRIPE_PRICE_THRIVE_WEEKLY_PLANNER',
@@ -46,6 +49,7 @@ const PRODUCTS = {
     tagline: 'A dedicated weekly planner built around the Thrive After 40 method.',
   },
   '90-day-blueprint-workbook': {
+    image: '/images/90-day-blueprint-workbook.jpg',
     name: 'The 90-Day Blueprint Workbook',
     priceDisplay: '$16',
     priceIdEnv: 'STRIPE_PRICE_BLUEPRINT_WORKBOOK',
