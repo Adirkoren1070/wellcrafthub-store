@@ -18,13 +18,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   Object.keys(PRODUCTS).forEach(function (slug) {
     var product = PRODUCTS[slug];
-    var icon = PRODUCT_ICONS[slug] || '';
+    var visual = product.image
+      ? '<img src="' + product.image + '" alt="' + product.name + '" loading="lazy">'
+      : (PRODUCT_ICONS[slug] || '');
 
     var card = document.createElement('a');
     card.href = product.pageUrl;
     card.className = 'product-card';
     card.innerHTML =
-      '<div class="product-visual">' + icon + '</div>' +
+      '<div class="product-visual">' + visual + '</div>' +
       '<div class="product-card-body">' +
       '<h3>' + product.name + '</h3>' +
       '<p class="tagline">' + product.tagline + '</p>' +
