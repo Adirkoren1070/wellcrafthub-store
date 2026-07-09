@@ -16,6 +16,7 @@
 
 const PRODUCTS = {
   'thrive-after-40-wellness-bundle': {
+    etsyUrl: 'https://www.etsy.com/il-en/listing/4528798861/thrive-after-40-wellness-bundle-complete',
     image: '/images/thrive-after-40-wellness-bundle.jpg',
     name: 'Thrive After 40 Wellness Bundle',
     priceDisplay: '$47',
@@ -27,6 +28,7 @@ const PRODUCTS = {
     tagline: 'The complete guide, weekly planner, and Notion template, bundled together.',
   },
   'longevity-weekly-planner': {
+    etsyUrl: 'https://www.etsy.com/il-en/listing/4525527044/longevity-weekly-planner-printable-habit',
     image: '/images/longevity-weekly-planner.jpg',
     name: 'Longevity Weekly Planner',
     priceDisplay: '$4.99',
@@ -38,6 +40,7 @@ const PRODUCTS = {
     tagline: 'A simple standalone planner for building steady, lasting habits.',
   },
   'thrive-after-40-weekly-planner': {
+    etsyUrl: 'https://www.etsy.com/il-en/listing/4526043306/thrive-after-40-weekly-wellness-planner',
     image: '/images/thrive-after-40-weekly-planner.jpg',
     name: 'Thrive After 40, Weekly Wellness Planner',
     priceDisplay: '$12.99',
@@ -49,6 +52,7 @@ const PRODUCTS = {
     tagline: 'A dedicated weekly planner built around the Thrive After 40 method.',
   },
   '90-day-blueprint-workbook': {
+    etsyUrl: 'https://www.etsy.com/il-en/listing/4533294144/90-day-wellness-blueprint-interactive',
     image: '/images/90-day-blueprint-workbook.jpg',
     name: 'The 90-Day Blueprint Workbook',
     priceDisplay: '$16',
