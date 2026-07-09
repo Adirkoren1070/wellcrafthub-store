@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', function () {
       : (PRODUCT_ICONS[slug] || '');
 
     var card = document.createElement('a');
-    card.href = product.pageUrl;
+    card.href = product.etsyUrl || product.pageUrl;
+    if (product.etsyUrl) { card.target = '_blank'; card.rel = 'noopener'; }
     card.className = 'product-card';
     card.innerHTML =
       '<div class="product-visual">' + visual + '</div>' +
@@ -32,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
       '<p class="tagline">' + product.tagline + '</p>' +
       '<div class="product-card-price">' +
       '<span class="price-tag">' + product.priceDisplay + '</span>' +
-      '<span>View details &rarr;</span>' +
+      '<span>Buy on Etsy &rarr;</span>' +
       '</div></div>';
 
     grid.appendChild(card);
